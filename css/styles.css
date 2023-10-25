@@ -470,8 +470,17 @@ form select {
   border: 0;
   background-color: #dddddd;
 }
+
+input[type="checkbox"],
+.testerr {
+  display: inline;
+}
 textarea {
   resize: none;
+}
+
+form textarea {
+  display: block;
 }
 
 .flexing {
@@ -481,13 +490,9 @@ textarea {
   flex-wrap: wrap;
 }
 
-.flexing .column {
-  width: 100%;
-  flex: 1;
-}
-
 .column {
   flex: 1;
+  float: left;
   padding: 10px 50px 10px 50px;
 }
 
@@ -512,6 +517,7 @@ select {
 .nopadding {
   padding: 0;
 }
+
 .flex-placeholder {
   display: flex;
   flex-direction: row;
