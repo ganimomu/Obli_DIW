@@ -146,11 +146,6 @@ header nav a:hover {
   color: black;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 h1,
 h2,
 h3 {
@@ -328,7 +323,7 @@ hr {
 }
 
 #mainOffer {
-  width: 75%;
+  width: 1440px;
   margin: auto;
   text-align: center;
 }
@@ -383,7 +378,7 @@ hr {
 }
 .special-offers {
   margin: auto;
-  width: 75%;
+  width: 1440px;
 }
 .special-offers h3 {
   padding-bottom: 20px;
@@ -451,11 +446,11 @@ a {
 }
 
 form {
+  width: 1440px;
   display: flex;
-  margin: 0 100px;
+  margin: auto;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 150px;
 }
 
 form input,
@@ -501,8 +496,10 @@ textarea {
   padding: 0;
 }
 
-#chkSubscribe {
+#chkSubscribe,
+.btnNews {
   margin: 0;
+  flex: 1;
 }
 
 .btnNews {
@@ -552,6 +549,11 @@ textarea {
 }
 
 #footer h3 {
+  padding: 30px;
+  font-size: 2rem;
+}
+
+#contacto h3 {
   padding: 30px;
   font-size: 2rem;
 }
