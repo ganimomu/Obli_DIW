@@ -158,6 +158,7 @@ h3 {
 }
 
 h2 {
+  padding: 50px;
   font-size: 3rem;
 }
 
@@ -228,12 +229,13 @@ h2 {
 }
 
 table {
+  width: 100%;
   text-align: center;
   border-spacing: 0;
   border: 1px solid #a8a8a8;
 }
 th {
-  background-color: light#A8A8A8;
+  background-color: #a8a8a8;
   border: 1px solid #a8a8a8;
 }
 td {
@@ -284,8 +286,9 @@ h1 {
 }
 
 hr {
+  margin: 10px 0 10px 0;
+  display: block;
   border: 1px solid #1f2f57;
-  box-shadow: #1f2f57;
 }
 
 .main-desc {
@@ -319,43 +322,108 @@ hr {
 .banner {
   object-fit: fill;
 }
+#ofertas {
+  margin: auto;
+}
+
+#mainOffer {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+#mainOffer hr {
+  margin: 35px 0 35px 0;
+  border: 4px solid #1f2f57;
+}
 
 .other-grid {
+  margin: auto;
+  background-color: #fdfaf9;
+  text-align: center;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-auto-columns: 1fr;
   grid-template-areas: "long tall";
   justify-content: center;
 }
 .minigrid {
+  margin: auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-auto-rows: auto;
-  column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
   grid-template-areas: "long tall chungus";
-  justify-content: center;
+  justify-content: space-between;
 }
-.special-offer h4,
-.special-offer p,
-.special-offer h5,
-.special-offer a {
-  padding: 20px;
+.minigrid img {
+  width: 50%;
+  object-fit: contain;
+}
+.special-offer {
+  padding: 50px;
+  text-align: left;
+  max-width: 100%;
+}
+.special-offers {
+  margin: auto;
+  width: 75%;
+}
+.special-offers h3 {
+  padding-bottom: 20px;
+  font-size: 2rem;
 }
 
-.offerBox {
-  background-color: blanchedalmond;
-  padding: 1rem;
-  display: flex;
-  position: relative;
-  text-align: center;
+.special-offer h4 {
+  justify-self: center;
+  align-self: center;
+  padding-right: 20px;
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.special-offers p {
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+}
+.special-offer h5 {
+  font-size: 2rem;
+}
+#offer1 div,
+#offer2 div,
+#offer3 div {
+  display: inline-block;
+}
+#offer1,
+#offer2,
+#offer3 {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+}
+
+#offer1 img,
+#offer2 img,
+#offer3 img {
+  width: 100%;
+  align-self: center;
 }
 
 .saleBadge {
-  position: absolute;
-  left: 50%;
-  border: 1px pink;
-  border-radius: 5px;
+  display: inline-block;
+  background-color: #a8a8a8;
+  color: #fdfaf9;
+  border-radius: 20px;
+  padding: 5px 5px;
+  text-transform: uppercase;
+}
+.minigrid h4 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.minigrid p {
+  font-size: 1.5rem;
 }
 
 #ofertas {
@@ -418,5 +486,22 @@ select {
 }
 
 .buyButton {
-  background-color: salmon;
+  color: #fdfaf9;
+  background-color: #1f2f57;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fdfaf9;
+  background-color: #1f2f57;
+}
+.button:hover,
+.buyButton:hover {
+  background-color: #6091c3;
 }
