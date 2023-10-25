@@ -158,7 +158,7 @@ h3 {
 }
 
 h2 {
-  padding: 50px;
+  padding: 30px;
   font-size: 3rem;
 }
 
@@ -518,6 +518,40 @@ select {
   background-color: #1f2f57;
 }
 .button:hover,
-.buyButton:hover {
+.buyButton:hover,
+.formButton:hover {
   background-color: #6091c3;
+}
+
+.formButton {
+  color: #fdfaf9;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #1f2f57;
+}
+
+#footer {
+  text-align: center;
+  margin: auto;
+  background-color: #a8a8a8;
+}
+
+#footer .minigrid {
+  width: 20%;
+  column-gap: 5px;
+  padding-bottom: 50px;
+}
+
+#footer h3 {
+  padding: 30px;
+  font-size: 2rem;
+}
+
+#contacto {
+  padding: 50px;
+}
+
+#ofertas {
+  padding: 50px;
 }
