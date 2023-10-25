@@ -88,37 +88,39 @@
       <section id="tematica">
         <!-- PLACEHOLDERS -->
         <h2>Nuestra comunidad</h2>
-        <div id="grilla">
-          <div class="item1">
-            <img
-              src="https://www.wsupercars.com/wallpapers-wide/Volkswagen/2022-Volkswagen-Golf-R-005-1440w.jpg"
-              alt="Foto de un Volkswagen Golf R en ruta despoblada"
-              title="Volkswagen Golf R MK7 - WSupercars.com" />
-          </div>
-          <div class="item2">
-            <img
-              src="https://lh3.googleusercontent.com/pw/ADCreHc_odY6wdiJXCNhysHN9tSTC0aS70fLTysCQzHlT54gMlrowEuJ0A-HPDO4_mQSAop_UbJbtBe8P0HWngZ7skkW9IH5CB8Ckea_UFN-yTaPOlOha1t7sk2Mq66IbDxxElyWfGNcI6pvUIbydd7fgyCL2g=w544-h971-s-no-gm?authuser=0"
-              alt="Foto del interior de un auto Volkswagen. Vista desde asiento del conductor incluye volante, una calle con arboles y parte del tablero del vehiculo"
-              title="Volkswagen Gol V 2011 - Ganimomu" />
-          </div>
-          <div class="item3">
-            <img
-              src="/img/vwgol-frontfalback.jpg"
-              alt="Foto de un Volkswagen Gol, parte frontal y lateral del mismo vehiculo"
-              title="Volkswagen Gol V 2011 - Ganimomu" />
-          </div>
-          <div class="item4">
-            <img
-              id="vwgol"
-              src="/img/vwgo-back-fallback.jpg"
-              alt="Foto de un Volkswagen Gol - Parte trasera del vehiculo"
-              title="Volkswagen Gol V 2011 - Ganimomu" />
-          </div>
-          <div class="item5">
-            <img
-              src="/img/vwgolftrackday.jpg"
-              alt="Foto de un Volkswagen Golf en trackday"
-              title="Volkswagen Golf MK7 - Nurburgring.de" />
+        <div class="tematica">
+          <div id="grilla">
+            <div class="item1">
+              <img
+                src="https://www.wsupercars.com/wallpapers-wide/Volkswagen/2022-Volkswagen-Golf-R-005-1440w.jpg"
+                alt="Foto de un Volkswagen Golf R en ruta despoblada"
+                title="Volkswagen Golf R MK7 - WSupercars.com" />
+            </div>
+            <div class="item2">
+              <img
+                src="https://lh3.googleusercontent.com/pw/ADCreHc_odY6wdiJXCNhysHN9tSTC0aS70fLTysCQzHlT54gMlrowEuJ0A-HPDO4_mQSAop_UbJbtBe8P0HWngZ7skkW9IH5CB8Ckea_UFN-yTaPOlOha1t7sk2Mq66IbDxxElyWfGNcI6pvUIbydd7fgyCL2g=w544-h971-s-no-gm?authuser=0"
+                alt="Foto del interior de un auto Volkswagen. Vista desde asiento del conductor incluye volante, una calle con arboles y parte del tablero del vehiculo"
+                title="Volkswagen Gol V 2011 - Ganimomu" />
+            </div>
+            <div class="item3">
+              <img
+                src="/img/vwgol-frontfalback.jpg"
+                alt="Foto de un Volkswagen Gol, parte frontal y lateral del mismo vehiculo"
+                title="Volkswagen Gol V 2011 - Ganimomu" />
+            </div>
+            <div class="item4">
+              <img
+                id="vwgol"
+                src="/img/vwgo-back-fallback.jpg"
+                alt="Foto de un Volkswagen Gol - Parte trasera del vehiculo"
+                title="Volkswagen Gol V 2011 - Ganimomu" />
+            </div>
+            <div class="item5">
+              <img
+                src="/img/vwgolftrackday.jpg"
+                alt="Foto de un Volkswagen Golf en trackday"
+                title="Volkswagen Golf MK7 - Nurburgring.de" />
+            </div>
           </div>
         </div>
       </section>
@@ -174,7 +176,7 @@
               <div>
                 <small class="saleBadge">20% off</small>
                 <h4>Multitool</h4>
-                <p>$1000</p>
+                <p>$999</p>
                 <a href="#" class="buyButton">Comprar</a>
               </div>
             </div>
@@ -184,7 +186,7 @@
               <div>
                 <small class="saleBadge">20% off</small>
                 <h4>Papelera</h4>
-                <p>$1000</p>
+                <p>$450</p>
                 <a href="#" class="buyButton">Comprar</a>
               </div>
             </div>
@@ -193,7 +195,7 @@
               <div class="item2">
                 <small class="saleBadge">20% off</small>
                 <h4>Mouse Beetle</h4>
-                <p>$1000</p>
+                <p>$720</p>
                 <a href="#" class="buyButton">Comprar</a>
               </div>
             </div>
@@ -206,9 +208,19 @@
         <form>
           <div class="column">
             <label for="txtName">Nombre y apellido*</label>
-            <input type="text" name="txtName" id="txtName" />
+            <input
+              type="text"
+              name="txtName"
+              id="txtName"
+              placeholder="Gabriel Moreno"
+              required />
             <label for="txtMail">Correo electronico*</label>
-            <input type="email" name="txtMail" id="txtMail" />
+            <input
+              type="email"
+              name="txtMail"
+              id="txtMail"
+              placeholder="mail@correo.com"
+              required />
             <label for="slcCountry">Pais</label>
             <div class="flex-placeholder">
               <div class="column nopadding">
@@ -217,9 +229,12 @@
                   <option value="uy" selected>Uruguay</option>
                 </select>
               </div>
-              <div class="column nopadding">
-                <input type="checkbox" name="chkSubscribe" class="item1" />
-                <label for="chkSubscribe" class="item2 testerr"
+              <div class="column nopadding testerr">
+                <input
+                  type="checkbox"
+                  name="chkSubscribe"
+                  class="item1 checkbox" />
+                <label for="chkSubscribe" class="item2"
                   >Quiero recibir novedades</label
                 >
               </div>
@@ -231,7 +246,9 @@
               name="btxtMessage"
               id="btxtMessage"
               cols="10"
-              rows="10"></textarea>
+              rows="10"
+              placeholder="Escriba su mensaje..."
+              required></textarea>
             <a href="#" class="formButton">Enviar</a>
           </div>
         </form>
