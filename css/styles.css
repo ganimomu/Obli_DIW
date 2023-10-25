@@ -121,6 +121,15 @@ html {
   /* align-items: center;
   justify-content: space-evenly; */
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "vw-head", "vw-text", "Playpen Sans", sans-serif;
+  font-weight: bold;
+}
 header {
   /* background-color: rgb(0, 0, 255); */
   background-color: #1f2f57;
@@ -461,6 +470,9 @@ form select {
   border: 0;
   background-color: #dddddd;
 }
+textarea {
+  resize: none;
+}
 
 .flexing {
   background-color: #fdfaf9;
@@ -470,7 +482,8 @@ form select {
 }
 
 .flexing .column {
-  flex: 0;
+  width: 100%;
+  flex: 1;
 }
 
 .column {
@@ -492,14 +505,18 @@ textarea {
   align-items: center;
 }
 
+select {
+  width: 100%;
+}
+
 .nopadding {
   padding: 0;
 }
-
-#chkSubscribe,
-.btnNews {
-  margin: 0;
-  flex: 1;
+.flex-placeholder {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .btnNews {
